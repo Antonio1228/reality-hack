@@ -4,6 +4,7 @@ dist/
 web-build/
 expo-web.log
 .env
+supabase/.temp/
 *.jks
 *.p8
 *.p12
