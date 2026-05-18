@@ -1,0 +1,79 @@
+{
+  "expo": {
+    "name": "Reality Hack",
+    "slug": "reality-hack",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "icon": "./assets/icon.png",
+    "description": "An AI-driven safe alternate reality game that sends short real-world missions.",
+    "scheme": "realityhack",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#07090b"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.antonio911228.realityhack",
+      "buildNumber": "1",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSCameraUsageDescription": "Reality Hack uses the camera only when you choose to unlock camera-based immersive missions.",
+        "NSMicrophoneUsageDescription": "Reality Hack uses the microphone only when you choose to unlock audio-based immersive missions.",
+        "NSPhotoLibraryUsageDescription": "Reality Hack can access selected photos only when you choose to use photo-based immersive missions.",
+        "NSPhotoLibraryAddUsageDescription": "Reality Hack may save generated mission artifacts only when you choose to export them.",
+        "NSLocationWhenInUseUsageDescription": "Reality Hack uses your approximate or precise location only to generate safer nearby immersive missions.",
+        "NSMotionUsageDescription": "Reality Hack can use motion data only for short movement-based immersive missions."
+      }
+    },
+    "android": {
+      "package": "com.antonio911228.realityhack",
+      "versionCode": 1,
+      "permissions": [],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#07090b"
+      }
+    },
+    "extra": {
+      "freeGenerations": 5
+    },
+    "plugins": [
+      "expo-localization",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#7cffc8"
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Reality Hack uses your location only to generate safe nearby immersive missions."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Reality Hack uses the camera only when you choose camera-based immersive missions.",
+          "microphonePermission": "Reality Hack uses the microphone only when you choose audio-based immersive missions."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Reality Hack can access selected photos only when you choose photo-based immersive missions."
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Reality Hack can access selected photos only when you choose photo-based immersive missions.",
+          "savePhotosPermission": "Reality Hack may save generated mission artifacts only when you choose to export them."
+        }
+      ]
+    ]
+  }
+}

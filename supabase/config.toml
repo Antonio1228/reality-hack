@@ -1,0 +1,4 @@
+project_id = "wajiopzwcptvhnfzocwp"
+
+[functions.generate-reality-mission]
+verify_jwt = false
